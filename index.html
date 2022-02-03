@@ -4,13 +4,298 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New-Project</title>
+    <title>Bookmark</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="logo-link" href="index.html">
+        <img class="logo-img" src="./img/logo-img.svg" alt="bookmark logo image" />
+      </a>
+      <div class="site-nav-list-wrapper">
+        <ul class="site-nav-list">
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#features">
+              Features
+            </a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#pricing">
+              Pricing
+            </a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn-red btn-uppercase" href="#">
+          Login
+        </a>
+      </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-info-wrapper">
+            <h2 class="hero-title">A Simple Bookmark Manager</h2>
+            <p class="hero-text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#chrome">Get it on Chrome</a>
+              <a class="btn btn-secondary" href="#firefox">Get it on Firefox</a>
+            </div>
+          </div>
+          <img class="hero-img" src="./img/hero-img.svg" alt="bookmark manager image">
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features" id="features">
+        <div class="container features-container">
+          <!-- features header -->
+          <div class="features-header">
+            <h2 class="features-header-title">
+              Features
+            </h2>
+            <p class="features-header-text">
+              Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+          </div>
+
+          <!-- features LIST -->
+          <div class="features-controller-list-wrapper">
+            <!-- features controller LIST -->
+            <ul class="features-controller-list">
+
+              <!-- features controller ITEM -->
+              <li class="features-controller-item active">
+                <a class="features-controller-link" href="#" data-slide="1">Simple Bookmarking</a>
+              </li>
+              <!-- features controller ITEM -->
+              <li class="features-controller-item">
+                <a class="features-controller-link" href="#" data-slide="2">Speedy Searching</a>
+              </li>
+              <!-- features controller ITEM -->
+              <li class="features-controller-item">
+                <a class="features-controller-link" href="#" data-slide="3">Easy Sharing</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SLIDER -->
+          <div class="features-items-wrapper">
+            <div class="features-items-inner">
+              <!-- SLIDER ITEM -->
+              <div class="features-item">
+                <img class="features-item-img-desktop" src="./img/slide-img-1.svg" alt="bookmark desktop image view">
+                <div class="features-item-content">
+                  <h3 class="features-item-content-title">Bookmark in one click</h3>
+                  <p class="features-item-content-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                  <a class="btn btn-primary btn-features" href="#">More info</a>
+                </div>
+              </div>
+              <!-- SLIDER ITEM -->
+              <div class="features-item" data-slide="2">
+                <img src="./img/slide-img-2.svg" alt="bookmark searching image view">
+                <div class="features-item-content">
+                  <h3 class="features-item-content-title">Intelligent search</h3>
+                  <p class="features-item-content-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                  <a class="btn btn-primary btn-features" href="#">More info</a>
+                </div>
+              </div>
+              <!-- SLIDER ITEM -->
+              <div class="features-item" data-slide="3">
+                <img src="./img/slide-img-3.svg" alt="bookmark sharing image view">
+                <div class="features-item-content">
+                  <h3 class="features-item-content-title">Share your bookmarks</h3>
+                  <p class="features-item-content-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                  <a class="btn btn-primary btn-features" href="#">More info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXTENSIONS -->
+      <section class="extensions">
+        <div class="extension-header">
+          <h3 class="extensions-header-title">
+            Download the extension
+          </h3>
+          <p class="extensions-header-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        </div>
+        <!-- extensions LIST -->
+        <ul class="extensions-list">
+          <!-- extension ITEM -->
+          <li class="extension-item" id="chrome">
+            <div class="item-extension">
+              <img class="item-extension-img" src="./img/chrome.svg" alt="chrome logo image">
+              <h3 class="item-extension-title">Add to Chrome</h3>
+              <p class="item-extension-version">Minimum version 62</p>
+              <hr class="dotted-line">
+              <button class="btn btn-primary">Add & Install Extension</button>
+            </div>
+          </li>
+          <!-- extension ITEM -->
+          <li class="extension-item" id="firefox">
+            <div class="item-extension">
+              <img class="item-extension-img" src="./img/firefox.svg" alt="chrome logo image">
+              <h3 class="item-extension-title">Add to Firefox</h3>
+              <p class="item-extension-version">Minimum version 55</p>
+              <hr class="dotted-line">
+              <button class="btn btn-primary">Add & Install Extension</button>
+            </div>
+          </li>
+          <!-- extension ITEM -->
+          <li class="extension-item">
+            <div class="item-extension">
+              <img class="item-extension-img" src="./img/opera.svg" alt="chrome logo image">
+              <h3 class="item-extension-title">Add to Opera</h3>
+              <p class="item-extension-version">Minimum version 46</p>
+              <hr class="dotted-line">
+              <button class="btn btn-primary">Add & Install Extension</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq">
+        <div class="faq-inner">
+          <div class="faq-header">
+          <h3 class="faq-header-title">Frequently Asked Questions</h3>
+          <p class="faq-header-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        </div>
+        <!-- faq LIST -->
+        <ul class="faq-questions-list">
+          <!-- faq ITEM -->
+          <li class="faq-question-item">
+            <div class="faq-question-info">
+              <a class="faq-question-link" href="#" data-openBtn>What is Bookmark?</a>
+            <button class="triangle-btn">
+              <svg class="triangle-btn-image" width="20" height="13" fill="none" data-openBtn xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+            </button>
+            </div>
+            <div class="faq-question-text-wrapper">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </li>
+          <!-- faq ITEM -->
+          <li class="faq-question-item">
+            <div class="faq-question-info">
+              <a class="faq-question-link" href="#" data-openBtn>How can I request a new browser?</a>
+            <button class="triangle-btn">
+              <svg class="triangle-btn-image" width="20" height="13" fill="none" data-openBtn xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+            </button>
+            </div>
+            <div class="faq-question-text-wrapper">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </li>
+          <!-- faq ITEM -->
+          <li class="faq-question-item">
+            <div class="faq-question-info">
+              <a class="faq-question-link" href="#" data-openBtn>Is there a mobile app?</a>
+            <button class="triangle-btn">
+              <svg class="triangle-btn-image" width="20" height="13" fill="none" data-openBtn xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+            </button>
+            </div>
+            <div class="faq-question-text-wrapper">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </li>
+          <!-- faq ITEM -->
+          <li class="faq-question-item">
+            <div class="faq-question-info">
+              <a class="faq-question-link" href="#" data-openBtn>What about other Chromium browsers?</a>
+            <button class="triangle-btn">
+              <svg class="triangle-btn-image" width="20" height="13" fill="none" data-openBtn xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+            </button>
+            </div>
+            <div class="faq-question-text-wrapper">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary btn-features btn-center" href="#">More info</a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="contact-inner">
+          <div class="notice">
+          35,000+ ALREADY JOINED
+        </div>
+        <h2 class="contact-title">Stay up-to-date with what we're doing</h2>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="input-wrapper">
+            <input 
+            class="contact-input" 
+            type="email" 
+            placeholder="Enter your email address"
+            name="email">
+            <div class="error-icon">
+              !
+            </div>
+            <div class="error-msg">
+              Whoops, make sure it's an email
+            </div>
+          </div>
+          <button class="btn btn-red btn-features" type="submit">Contact Us</button>
+        </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <a class="footer-logo-link" href="index.html">
+          <svg class="footer-logo-svg" width="149" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M51.69 19.039c1.065.616 2.25.924 3.557.924 1.306 0 2.492-.308 3.556-.924a6.71 6.71 0 0 0 2.51-2.53c.61-1.07.915-2.246.915-3.528 0-1.281-.305-2.457-.915-3.528a6.71 6.71 0 0 0-2.51-2.529C57.739 6.308 56.553 6 55.247 6c-1.307 0-2.492.308-3.556.924a6.711 6.711 0 0 0-2.511 2.53c-.61 1.07-.915 2.245-.915 3.527s.305 2.458.915 3.528a6.711 6.711 0 0 0 2.51 2.53Zm-9.463-12.74H37v13.365h5.413c.81 0 1.547-.152 2.212-.457a3.817 3.817 0 0 0 1.587-1.307c.392-.566.588-1.216.588-1.95 0-.76-.205-1.41-.616-1.951-.41-.542-.964-.937-1.661-1.186v-.149a3.255 3.255 0 0 0 1.297-1.13c.33-.49.495-1.073.495-1.745 0-.634-.18-1.22-.542-1.754-.36-.535-.855-.959-1.484-1.27a4.584 4.584 0 0 0-2.062-.466Zm1.129 4.993c-.33.305-.768.457-1.316.457h-2.52V8.557h2.595c.522 0 .942.153 1.26.458.317.305.476.681.476 1.129 0 .46-.165.843-.495 1.148Zm-1.036 6.076c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8Zm12.927.205c.821 0 1.574-.193 2.258-.578a4.176 4.176 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.176 4.176 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578Zm11.797 1.466c1.064.616 2.25.924 3.556.924 1.307 0 2.492-.308 3.556-.924a6.711 6.711 0 0 0 2.51-2.53c.61-1.07.915-2.246.915-3.528 0-1.281-.305-2.457-.914-3.528a6.711 6.711 0 0 0-2.511-2.529C73.092 6.308 71.906 6 70.6 6c-1.307 0-2.492.308-3.556.924a6.711 6.711 0 0 0-2.51 2.53c-.61 1.07-.915 2.245-.915 3.527s.305 2.458.914 3.528a6.711 6.711 0 0 0 2.511 2.53Zm3.556-1.466c.821 0 1.574-.193 2.259-.578a4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.521 4.521 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578ZM82.35 6.3h-2.52v13.365h2.52v-3.92l1.513-1.773 3.994 5.693h3.08v-.15l-5.338-7.54 4.834-5.526v-.15h-3.042L82.5 12.03h-.15V6.3ZM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.149-2.221h-.149l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6Zm23.694 0h-2.893l-5.003 13.365h2.781l1.12-3.192h5.115l1.12 3.192h2.781L117.472 6Zm.299 7.859-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.491ZM129.425 6h-4.872v13.365h2.52v-5.021h1.176l3.453 5.021h2.894v-.149l-3.584-5.133.018-.131a4.611 4.611 0 0 0 2.044-1.447 3.52 3.52 0 0 0 .812-2.286c0-.81-.186-1.534-.56-2.175a3.906 3.906 0 0 0-1.577-1.503c-.678-.36-1.453-.541-2.324-.541Zm-.019 6.03c.573 0 1.039-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333Zm9.75-6.03h-2.52v13.365h2.52v-3.92l1.512-1.773 3.995 5.693h3.08v-.149l-5.339-7.541 4.835-5.526V6h-3.043l-4.89 5.73h-.15V6Z" fill="currentColor"/><circle cx="12.5" cy="12.5" r="12.5" fill="#5267df"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11 7a2 2 0 0 0-2 2v10l3.54-3.44L16.079 19V9a2 2 0 0 0-2-2H11Z" fill="#fff"/></svg>
+        </a>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#features">Features</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="social-links-list">
+          <li class="social-link-item">
+            <a class="social-link" href="https://facebook.com">
+              <svg class="social-link-img" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a class="social-link" href="https://twitter.com">
+              <svg class="social-link-img" width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z" fill="currentColor"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
